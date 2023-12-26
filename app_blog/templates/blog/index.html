@@ -39,42 +39,19 @@
 <!-- Conteneur -->
 <div class="container">
     <!-- row -->
+    <h1 class="h1 text-center">Liste de blogs</h1>
     <div class="row d-flex my-4">
-        <div class="card col mx-2" style="width: 18rem;">
-            <img src="{% static 'images/image2.jpg' %}" class="card-img-top my-img-card" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Nature blue</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Voir détail</a>
+        {% for blog in list_blogs %}
+            <div class="card col mx-2" style="width: 18rem;">
+                <img src="{{ blog.image.url }}" style="height: 150px;" class="card-img-top my-img-card" alt="Image...">
+                
+                <div class="card-body">
+                    <h5 class="card-title">{{ blog.title }}</h5>
+                    <p class="card-text">{{ blog.description }}</p>
+                    <a href="#" class="btn btn-primary">Voir détail</a>
+                </div>
             </div>
-        </div>
-        
-        <div class="card col mx-2" style="width: 18rem;">
-            <img src="{% static 'images/image1.jpg' %}" class="card-img-top my-img-card" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Nature claire</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Voir détail</a>
-            </div>
-        </div>
-        
-        <div class="card col mx-2" style="width: 18rem;">
-            <img src="{% static 'images/image3.jpg' %}" class="card-img-top my-img-card" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Nature vert</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Voir détail</a>
-            </div>
-        </div>
-          
-        <div class="card col mx-2" style="width: 18rem;">
-            <img src="{% static 'images/image2.jpg' %}" class="card-img-top my-img-card" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Nature jaune</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Voir détail</a>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 
 </div>
