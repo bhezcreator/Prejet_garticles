@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    
+    {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+</head>
+<body>
+    <header>
+		<span class="logo">Blog</span>
+		<a href="#"><i class="fa fa-lock"></i> Déconnexion</a>
+	</header>
+    
+    <div class="contenus">
+        {% include 'partials/nav/nav_admin.html' %}
+
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</body>
+</html>

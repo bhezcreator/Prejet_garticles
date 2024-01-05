@@ -1,0 +1,138 @@
+@charset "UTF-8";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: rgb(250, 249, 249);
+	color: rgb(24, 24, 24);
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: 'arial';
+}
+
+header{
+	height: 60px;
+	background-color: green;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	justify-items: center;
+	flex-wrap: wrap;
+	padding: 0 20px;
+}
+
+header span{
+	color: greenyellow;
+	font-weight: 900;
+}
+
+header a{
+	text-align: center;
+	text-decoration: none;
+	background-color: greenyellow;
+	color: darkgreen;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+header a:hover{
+	color: white;
+	background-color: darkgreen;
+}
+
+.contenus{
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	margin-top: 5px;
+}
+
+.contenus .nav-contenus{
+	width: 230px;
+	padding: 0 0 0 17px;
+	height: calc(100vh - 70px);
+	background-color: green;
+}
+
+.contenus .nav-contenus a{
+	display: inline-block;
+	width: 200px;
+	margin: 5px;
+	padding: 10px;
+	background-color: greenyellow;
+	text-decoration: none;
+	color: darkgreen;
+}
+
+.contenus .nav-contenus a:hover{
+	background-color: darkgreen;
+	color: white;
+}
+
+.contenus .center-contenus{
+	width: 100%;
+	height: auto;
+	margin: 0 5px;
+	border-top: 5px solid green;
+}
+
+.center-contenus .bar-titre{
+	width: calc(100% - 20px);
+	height: 40px;
+	margin-bottom: 5px;
+	padding: 0 10px;
+	background-color: greenyellow;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	justify-items: center;
+	flex-wrap: wrap;
+}
+
+.bar-titre h1{
+	font-size: 20px;
+	color: darkgreen;
+}
+
+.bar-titre .btn a{
+	text-decoration: none;
+	padding: 7px 10px;
+	border-radius: 5px;
+	background-color: darkgreen;
+	color: white;
+	font-weight: 500;
+}
+
+.bar-titre .btn a:hover{
+	background-color: green;
+}
+
+.center-contenus table{
+	width: calc(100% - 20px);
+	height: auto;
+	border: 1px solid green;
+	border-collapse: collapse;
+	margin: 0 10px;
+}
+
+.center-contenus table thead{
+	background-color: greenyellow;
+	color: darkgreen;
+}
+
+.center-contenus table thead tr,th{
+	border: 1px solid darkgreen;
+	padding: 10px;
+	font-weight: 600;
+}
+
+.center-contenus table tbody tr td{
+	border: 1px solid darkgreen;
+	padding: 5px;
+}
+
+.center-contenus table tbody tr td a{
+	margin: 3px;
+	font-size: 15px;
+}
+

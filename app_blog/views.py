@@ -5,14 +5,11 @@ from .models import Blog
 
 # Affichage de la page accueil du module blog
 def indexView(request):
-
     list_blogs = Blog.objects.all()
-
     context = {
         'list_blogs' : list_blogs
     }
     return render(request, 'blog/index.html',context)
-
 
 # Affichage de la page contact du module blog
 def contactView(request):
@@ -21,3 +18,11 @@ def contactView(request):
 # Affichage de la page appropos
 def aboutView(request):
     return render(request, 'blog/about.html')
+
+# Affichage de la page connexion
+def connexionView(request):
+    return render(request, 'blog/connexion.html')
+
+# Affichage de la page connexion
+def registerView(request):
+    return render(request, 'blog/register.html')

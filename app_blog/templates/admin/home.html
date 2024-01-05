@@ -1,0 +1,45 @@
+{% extends 'partials/base_admin.html' %}
+
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
+{% block content %}
+    <section class="center-contenus">
+        <div class="bar-titre">
+            <h1>Bienvenu dans l'espace admin</h1>
+            <div class="btn">
+                <a href="#"><i class="fa fa-plus-square"></i> Ajouter</a>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Orange</td>
+                    <td>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </td>
+                    <td>
+                        <a href="#"><i class="fa fa-eye"></i></a>
+                        <a href="#"><i class="fa fa-edit"></i> </a>
+                        <a href="#"><i class="fa fa-trash" style="color:red;"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+{% endblock %}
