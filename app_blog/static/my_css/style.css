@@ -1,3 +1,42 @@
+
+
+.form-user{
+    background-color: rgb(236, 236, 236);
+    margin: 0 auto;
+    width: 700px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-user div label{
+    font-weight: 700;
+    display: block;
+    margin: 5px 0;
+}
+
+.form-user div input{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 5px;
+}
+
+.form-user input[type="submit"]{
+    background-color: green;
+    border: none;
+    color: white;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+.helptext{
+    font-size: 14px;
+    color: rgb(78, 78, 78);
+}
 .my-img{
     height: 90vh;
 }

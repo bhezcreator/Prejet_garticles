@@ -1,0 +1,36 @@
+{% extends 'partials/base_admin.html' %}
+
+{% block title %}
+    <title>Liste des utilisateurs</title>
+{% endblock %}
+
+{% block content %}
+    <section class="center-contenus">
+        <div class="bar-titre">
+            <h1>Liste des utilisateurs</h1>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Nom utilisateur</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user.id }} </td>
+                    <td>{{ user.username }} </td>
+                    <td>
+                        {{ user.email }} 
+                    </td>
+    
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+{% endblock %}

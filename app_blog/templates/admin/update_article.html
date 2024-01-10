@@ -1,0 +1,25 @@
+{% extends 'partials/base_admin.html' %}
+
+{% block title %}
+    <title>Modifier l'article</title>
+{% endblock %}
+
+{% block content %}
+    <section class="center-contenus">
+        <div class="bar-titre">
+            <h1>Modifier l'article</h1>
+            <div class="btn">
+                <a href="{% url 'listArticles' %}"><i class="fa fa-list"></i> Voir la liste</a>
+            </div>
+        </div>
+
+        <form method="post" enctype="multipart/form-data" class="form-user">
+            {% csrf_token %}
+    
+            {{ form.as_div }}
+    
+            <input type="submit" value="Modifier">
+        </form>
+    
+    </section>
+{% endblock %}

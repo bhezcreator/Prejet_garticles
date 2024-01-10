@@ -6,13 +6,19 @@
 
 {% block content %}
 
-    <h1>Authentification</h1>
+    <h1 style="text-align:center;">Authentification</h1>
 
-    <form action="" method="post">
-
-        <input type="text" name="name" placeholder="Votre nom">
-        <input type="password" name="password" placeholder="Votre mot de passe">
-
+    <form action="{% url 'connexion' %}" method="post" class="form-user">
+        {% csrf_token %}
+        <div>
+            <input type="text" name="username" placeholder="Votre nom">
+        </div> 
+        
+        <br>
+        
+        <div>
+            <input type="password" name="password" placeholder="Votre mot de passe">
+        </div>
         <input type="submit" value="Se connecter">
     </form>
 
